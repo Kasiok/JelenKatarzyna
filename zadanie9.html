@@ -1,0 +1,33 @@
+<html>
+<body>
+<div style="color:green;font-size:45px;">
+<script language="JavaScript">
+
+var d1_jelen=prompt("dzien koncowy:","");
+
+var d2_jelen=prompt("dzien poczatkowy:","");
+
+var e1_jelen=prompt("godzina 1:","");
+
+var e2_jelen=prompt("godzina 2:","");
+
+var suma;
+var sekundy;
+var godziny;
+var dni;
+
+var a=parseFloat(d1_jelen);
+var b=parseFloat(d2_jelen);
+
+var c=parseFloat(e1_jelen);
+var d=parseFloat(e2_jelen);
+
+dni=d1_jelen-d2_jelen;
+godziny=(e2_jelen-e1_jelen)*3600;
+sek=dni*24*60*60;
+suma=sek-godziny;
+document.write(" Od dnia: "+a+" godziny: "+c+" do dnia: "+b+" godziny: "+d+" minelo: "+suma+" sekund <br>");
+</script>
+</div>
+</body>
+</html>
