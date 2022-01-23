@@ -1,0 +1,26 @@
+<html>
+<body>
+<script type="text/javascript">
+function okno_zamknij()
+{
+window.close()
+}
+</script>
+<script language="JavaScript">
+
+var x=prompt("podaj rok powstania java sript","");
+var rok_szr=parseFloat(x);
+document.write("<font color=black size=3>Wczytany rok=</font>"+rok_szr+"<br>");
+if(rok_szr==1995)
+{
+document.write("<font color=blue size=4>Poprawna odpowiedz, gratulacje szefunciu</font>"+"<br>");
+}
+else
+{
+document.write("<font color=red size=7>Doinformuj sie nierobie</font>"+"<br>");
+}
+</script>
+
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>

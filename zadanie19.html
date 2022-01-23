@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>
+Obliczanie pola i obwodu prostokata
+</title>
+ <script language="JavaScript">
+function Pole_jelen(a,b)
+{
+ a_dana_jel=parseFloat(a)
+ b_dana_jel=parseFloat(b)
+ pole_wynik=a_dana_jel * b_jel_bog
+ document.getElementsByName('ppa')[0].value=pole_wynik.toFixed(2); /* na dokument */
+ alert("Pole="+pole_wynik.toFixed(2)+" cm"); /*do okna Alert */
+ wyprowadz_pole_jel.innerHTML="Pole="+pole_wynik.toFixed(2)+" cm^2"+"<br>"; /* do tabeli */
+}
+function obwod_jelen(a,b)
+{
+ a_dana_jel=parseFloat(a)
+ b_dana_jel=parseFloat(b)
+ Obw_wynik=a_dana_jel+b_dana_jel+a_dana_jel+b_dana_jel
+ document.getElementsByName('obc')[0].value=Obw_wynik.toFixed(2);
+ alert("Obw="+Obw_wynik.toFixed(2)+" cm^2");
+ wyprowadz_obwod_jel.innerHTML="Obw="+Obw_wynik.toFixed(2)+"cm";
+}
+ </script>
+ </head>
+<body>
+<script type="text/javascript">
+function okno_zamknij()
+{
+window.close()
+}
+</script>
+Obliczanie pola i obwodu prostokata
+<br> <br>
+<form name="formularz" action="..." onsubmit="obwod_jelen(this.wys.value,this.dl.value);
+Pole_jelen(this.wys.value,this.dl.value);return false">
+Podaj a=
+<input size="6" name="wys">
+Podaj b=
+<input size="6" name="dl">
+<br>
+<br>
+<input TYPE="submit" Value="oblicz" >
+<br>
+<br>
+Obw=
+<input size="6" name="ppa">
+Pp=
+<input size="6" name="obc">
+</form>
+<table>
+<tr id="wyprowadz_pole_jel"></tr>
+<tr id="wyprowadz_obwod_jel"></tr>
+</table><br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>
