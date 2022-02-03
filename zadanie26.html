@@ -1,0 +1,29 @@
+<html>
+<head>
+<script type="text/javascript">
+function okno_zamknij()
+{
+window.close()
+}
+
+var dom_wyswietl_jelen = {
+nazwa: 'AraDeveloper',
+stan_dom: 'Bliźniak w zabudowaniu',
+dodatki: 'ogrzewanie podlogowe, pokoj na poddaszu',
+pokaz: function ()
+
+{
+document.write(this.nazwa + ' ' + this.stan_dom+' ' +this.dodatki)
+}
+
+}
+
+dom_wyswietl_jelen.pokaz();
+</script>
+</head>
+<body>
+<br>
+programowanie obiektowe
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>

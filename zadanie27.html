@@ -1,0 +1,28 @@
+<html>
+<head>
+<script type="text/javascript">
+function okno_zamknij_jele()
+{
+window.close()
+}
+var dom_wyswietl_jelen = {
+nazwa: 'AraDeveloper',
+stan_dom: 'Bliźniak w zabudowie',
+dodatki: 'ogrzewanie podlogowe, pokoj na poddaszu',
+pokaz: function ()
+{
+document.write(this.nazwa + ' ' + this.stan_dom+' ' +this.dodatki)
+}
+}
+dom_wyswietl_jelen.pokaz();
+dom_wyswietl_jelen.soms=" no coż :( ";
+dom_wyswietl_jelen.wypisz=function() {alert('Uwaga, denerwujący sąsiedzi ' + this.soms)}
+dom_wyswietl_jelen.wypisz();
+</script>
+</head>
+<body>
+<br>
+programowanie obiektowe<br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>
